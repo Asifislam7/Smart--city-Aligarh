@@ -3,32 +3,48 @@ import styled from "styled-components";
 import { useGlobalContext } from "./context";
 import { NavLink } from "react-router-dom";
 import { Button } from "./styles/Button";
+import Firstyear from "./components/Card";
+import "./components/css/style.css";
+import waste from "./Waste";
 
 const Services = () => {
   const { services } = useGlobalContext();
   console.log(services);
 
   return (
-    <Wrapper className="section">
+    <Wrapper className="section animate__animated animate__fadeInDown">
       <h2 className="common-heading">Our Services</h2>
       <div className="container grid grid-three-column">
-        {services.map((curElem) => {
-          const { id, name, image, description } = curElem;
-          return (
-            <div key={id} className="card">
-              <figure>
-                <img src={image} alt={name} />
-              </figure>
-              <div className="card-data">
-                <h3>{name}</h3>
-                <p>{description}</p>
-                <NavLink to="/service">
-                  <Button className="btn">Read More</Button>
-                </NavLink>
-              </div>
+        {/* <Firstyear image={"sewage.jpeg"} year={"Sewage"} title={"Sewage is the most prominent problem of the Aligarh nowadays and the solution is here"} /> */}
+        <div className="Services">
+          <NavLink to="/sewage">
+            <img src="./images/sewage.jpeg" alt="" />
+            <div>
+              <Button className="btn">Sewage</Button>
             </div>
-          );
-        })}
+          </NavLink>
+
+          <NavLink to="/roads">
+            <img src="./images/roads.jpeg" alt="" />
+            <div>
+              <Button className="btn">Roads</Button>
+            </div>
+          </NavLink>
+
+          <NavLink to="/waste">
+            <img src="./images/waste.jpg" alt="" />
+            <div>
+              <Button className="btn">Waste</Button>
+            </div>
+          </NavLink>
+
+          <NavLink to="/pest">
+            <img src="./images/pest.jpeg" alt="" />
+            <div>
+              <Button className="btn">Pest</Button>
+            </div>
+          </NavLink>
+        </div>
       </div>
     </Wrapper>
   );

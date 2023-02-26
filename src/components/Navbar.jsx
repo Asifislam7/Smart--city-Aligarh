@@ -64,7 +64,8 @@ const Navbar = () => {
         position: absolute;
         top: 0;
         left: 0;
-        background-color: #fff;
+        background-color: white;
+        // background-color: rgb(189,72,72);
 
         display: flex;
         justify-content: center;
@@ -148,7 +149,7 @@ const Navbar = () => {
               className="navbar-link"
               onClick={() => setOpenMenu(false)}
               to="/contact">
-              Contact
+                Register
             </NavLink>
           </li>
         </ul>

@@ -27,8 +27,8 @@ const Footer = () => {
       <footer>
         <div className="container grid grid-four-column">
           <div className="footer-about">
-            <h3>Thapa Technical</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <h3>Advanced Aligarh</h3>
+            <p>Passion to make Aligarh a Smart City</p>
           </div>
 
           {/* 2nd column */}
@@ -42,6 +42,7 @@ const Footer = () => {
                 placeholder="Email"
               />
               <input type="submit" value="Subscribe" />
+            
             </form>
           </div>
 
@@ -77,7 +78,7 @@ const Footer = () => {
           <hr />
           <div className="container grid grid-two-column">
             <p>
-              @{new Date().getFullYear()} ThapaTechnical. All Rights Reserved
+              @{new Date().getFullYear()} Asif,Umar,Kaif All Rights Reserved
             </p>
             <div>
               <p>PRIVACY POLICY</p>

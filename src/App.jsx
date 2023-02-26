@@ -9,6 +9,10 @@ import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./GlobalStyle";
 import Error from "./Error";
 import GoToTop from "./components/GoToTop";
+import Waste from "./Waste";
+import Wastemanage from "./Wastemanage";
+import Contractor from "./Contractor";
+import Details from "./Details";
 
 const App = () => {
   const theme = {
@@ -43,7 +47,12 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/service" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/waste" element={<Waste />} />
           <Route path="*" element={<Error />} />
+          <Route path="/waste/wastemanage" element={<Wastemanage/>} />
+          <Route path="/waste/contractor" element={<Contractor/>} />
+          <Route path="/waste/contractor/details" element={<Details/>} />
+          
         </Routes>
 
         <Footer />

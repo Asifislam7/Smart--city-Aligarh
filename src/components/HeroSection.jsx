@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { Button } from "../styles/Button";
 import { useGlobalContext } from "../context";
+import "animate.css"
 
 const HeroSection = () => {
   const { name, image } = useGlobalContext();
@@ -11,14 +12,13 @@ const HeroSection = () => {
     <Wrapper>
       <div className="container grid grid-two-column">
         <div className="section-hero-data">
-          <p className="hero-top-data">THIS IS ME</p>
-          <h1 className="hero-heading">{name}</h1>
-          <p className="hero-para">
-            I'm {name}. A Full stack Developer, youtuber and freelancer. A Full
-            stack Developer, youtuber and freelancer.
+          <p className="hero-top-data">Advanced Aligarh</p>
+          <h1 className="hero-heading animate__animated animate__fadeInDown"style={{color:'rgb(140, 20, 252)'}}>Your goal is our mission</h1>
+          <p className="hero-para animate__animated animate__fadeInUp" style={{color:'white'}}>
+          Creating smart connected systems for our urban areas provides a great many benefits for citizens around the world, not only to improve quality of life, but also to ensure sustainability and the best possible use of a city with such website can more efficiently manage infrastructure and maintenance, thereby reducing operating costs and improving the lives of its citizens.
           </p>
           <Button className="btn hireme-btn">
-            <NavLink to="/contact"> hire me </NavLink>
+            <NavLink to="/contact"> Complain here </NavLink>
           </Button>
         </div>
 
